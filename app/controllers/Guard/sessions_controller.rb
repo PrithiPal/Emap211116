@@ -1,6 +1,8 @@
 class Guard::SessionsController < Devise::SessionsController
 # before_action :configure_sign_in_params, only: [:create]
-
+  def index 
+    @guard = current_guard
+  end
   # GET /resource/sign_in
   # def new
   #   super

@@ -1,3 +1,32 @@
 <h1 align="center">This is welcome#index</h1>
 
-<h2 align="center"><%=link_to "Admin", admin_root_path%></h2>
+
+<!-- Admin-->
+<h2 align="center"><%=link_to "Admin Login", admin_root_path%></h2>
+
+<!-- Supervisor-->
+<h3 align="center"><% if supervisor_signed_in? %>
+  
+  <%= link_to('Supervisor Logout', destroy_supervisor_session_path, :method => :delete) %>
+  <h3 align="center">loged in as : <%= current_supervisor.email %></h3>
+  
+<% else %>
+  
+  <%= link_to('Supervisor Login', new_supervisor_session_path)  %>  
+ 
+<% end %>
+</h3>
+
+<!-- Guard-->
+<h4 align="center"><% if guard_signed_in? %>
+  
+  <%= link_to('Guard Logout', destroy_guard_session_path, :method => :delete) %>
+  <h4 align="center">loged in as : <%= current_guard.email %></h4>
+  
+<% else %>
+  
+  <%= link_to('Guard Login', new_guard_session_path)  %>  
+ 
+<% end %>
+</h4>
+

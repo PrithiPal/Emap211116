@@ -1,4 +1,4 @@
-<%if admin_user_signed_in?%>
+
     <h2>Sign up for bulla bhai</h2>
     <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
       <%= devise_error_messages! %>
@@ -27,6 +27,3 @@
     <% end %>
     
     <%= render "guards/shared/links" %>
-<%else%>
-  <h1 align="center">first login as an admin</h1>
-<%end%>
