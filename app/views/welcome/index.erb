@@ -1,3 +1,15 @@
 <h1 align="center">This is welcome#index</h1>
 
-<h2 align="center"><%=link_to "Admin", admin_root_path%></h2>
+<h2 align="center"><%=link_to "Admin Login", admin_root_path%></h2>
+
+<h3 align="center"><% if guard_signed_in? %>
+  
+  <%= link_to('Guard Logout', destroy_guard_session_path, :method => :delete) %>
+  <h4 align="center">loged in as : <%= current_guard.email %></h4>
+  
+<% else %>
+  
+  <%= link_to('Guard Login', new_guard_session_path)  %>  
+ 
+<% end %>
+</h3>
