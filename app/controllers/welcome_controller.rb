@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
-
+ 
   # GET /welcome
   def index
 
