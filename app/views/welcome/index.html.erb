@@ -5,14 +5,15 @@
 
   <h2 align="center">Here are the your details : </h2>
   <p align="center">Name = <%=current_guard.email%></p>
-  
+  <p align="center"><%=link_to("Edit",edit_guard_registration_path)%></p>
+ 
   
   
   
 <%elsif supervisor_signed_in? %>
   
   <h2 align="center">Here are the your details : </h2>
-  <p align="center">Name = <%=current_guard.email%></p>
+  <p align="center">Name = <%=current_supervisor.email%></p>
   
 <%end%>
   

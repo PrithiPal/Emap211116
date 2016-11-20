@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   resources :guards
   resources :supervisors
 
-
+  get '/welcome/guard/edit' => "welcome#edit"
   root 'welcome#index'
 
   # Example of regular route:
