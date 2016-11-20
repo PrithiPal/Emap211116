@@ -33,6 +33,31 @@
     <%= f.email_field :email, autofocus: true %>
   </div>
 
+  <div class="field">
+    <%= f.label :zip_code %><br />
+    <%= f.text_field :zip_code, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :address1 %><br />
+    <%= f.text_field :address1, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :address2 %><br />
+    <%= f.text_field :address2, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :city %><br />
+    <%= f.text_field :city, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :state %><br />
+    <%= f.text_field :state, autofocus: true %>
+  </div>
+
   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
     <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
   <% end %>
