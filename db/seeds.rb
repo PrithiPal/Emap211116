@@ -8,8 +8,8 @@
 #AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')
 AdminUser.create!(email: 'bulla_bhai@gmail.com', password: 'bullabhai', password_confirmation: 'bullabhai')
 
-Supervisor.create!(email: 'babu_bhai@gmail.com', password: 'babubhai', password_confirmation: 'babubhai')
-Supervisor.create!(email: 'dj_khaled@gmail.com', password: 'djdjdj', password_confirmation: 'djdjdj')
+Supervisor.create!(email: 'supervisor@gmail.com', password: 'supervisor', password_confirmation: 'supervisor')
 
-Guard.create!(email: "billo_rani@gmail.com", password: 'billobillo', password_confirmation: 'billobillo', supervisor_id: 1)
-Guard.create!(email: "billo_da_peo@gmail.com", password: 'peopeopeo', password_confirmation: 'peopeopeo', supervisor_id: 2)
+
+Guard.create!(email: "guard@gmail.com", password: 'guards', password_confirmation: 'guards')
+

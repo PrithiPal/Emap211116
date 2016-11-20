@@ -1,0 +1,19 @@
+<h1 align="center">This is Home Page</h1>
+<br>
+
+<%if guard_signed_in? %>
+
+  <h2 align="center">Here are the your details : </h2>
+  <p align="center">Name = <%=current_guard.email%></p>
+  
+  
+  
+  
+<%elsif supervisor_signed_in? %>
+  
+  <h2 align="center">Here are the your details : </h2>
+  <p align="center">Name = <%=current_guard.email%></p>
+  
+<%end%>
+  
+  
